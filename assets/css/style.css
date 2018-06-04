@@ -1,0 +1,194 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+#header{
+    background-color: #E5E5E5;
+    height: 85px;
+}
+.menu{
+    margin-right: 100px;
+}
+ul{
+    text-align: right;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin-left: 15px;
+}
+a{
+    
+}
+a:hover{
+    text-decoration: none;
+}
+.nav-link i{
+    font-size: 30px;
+}
+.nav-link:hover{
+    border-bottom: 9px solid #D8D8D8;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#welcome{
+    margin: 0;
+    padding: 0;
+}
+.categories{
+    margin-top: 80px;
+    font-size: 19px;
+    color: #B5B5B5;
+    font-weight: 200;
+}
+.titles{
+    font-size: 44px;
+    color: #626262;
+    font-weight: 500;
+    margin: 0;
+}
+.brandname{
+    font-weight: 700;
+    color: #707070;
+
+}
+.description{
+    margin-top: 10px;
+    font-size: 22px;
+    color: #838282;
+    font-weight: 200;
+}
+.cta{
+    width: 300px;
+    height: 50px;
+    background-color: #01B59A!important;
+    border-color: #01B59A!important;
+    border-radius: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16);
+}
+.cta:hover{
+    transition: 1s;
+    background-color: #018E79!important;
+}
+
+hr{
+    width: 84%;
+    border-color: #E5E5E5;
+}
+#about{
+    margin: 0;
+    padding: 0;
+}
+#features{
+    margin: 0;
+    padding: 0;
+    height: 400px;
+}
+#blackrectangle{
+    width: 675px;
+    height: 113px;
+    background-color: #313131;
+    border-radius: 10px;
+    margin-top: 120px;
+    z-index: -1;
+}
+#whiterectangle1{
+    width: 162px;
+    height: 167px;
+    background-color: white;
+    border-radius: 8px;
+    z-index: 0;
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    box-shadow: dimgrey 2px 0px 1Px;
+}
+#whiterectangle2{
+    width: 162px;
+    height: 167px;
+    background-color: white;
+    border-radius: 8px;
+    z-index: 0;
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    box-shadow: dimgrey 2px 2px 1Px;
+}
+#whiterectangle3{
+    width: 162px;
+    height: 167px;
+    background-color: white;
+    border-radius: 8px;
+    z-index: 0;
+    position: absolute;
+    top: 45%;
+    left: 68%;
+    box-shadow: dimgrey 2px 2px 1Px;
+}
+.arrows{
+    font-size: 50px;
+    position: absolute;
+    left: 35%;
+    top: 85%;
+}
+a{
+    color: #1d2124;
+}
+a:hover{
+    transition: 0.5s;
+    text-decoration: none;
+    color: #01B59A;
+}
+#features2{
+    margin-top: 80px;
+}
+.checkboxes{
+    margin-left: 30px;
+    font-size: 22px;
+    color: #838282;
+}
+.check{
+    font-size: 40Px;
+    color: black;
+}
+
+#prefoot{
+    margin-top: 100px;
+    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+    background-blend-mode: screen;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    height: 250px;
+}
+#prefoot p{
+    margin-left: 50px;
+}
+
+footer{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+footer ul li{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.legals{
+    font-size: 10px;
+}
+#apple{
+    font-size: 44px;
+    color: #000000;
+    font-weight: 200;
+    margin: 100px;
+}
+.appdesc{
+    font-size: 35px;
+    color: #626262;
+    font-weight: 300;
+    margin: 0;
+}
+
