@@ -5,12 +5,12 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="assets/css/carousel.min.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Accueil Power 28</title>
 </head>
 <body>
 <div class="row d-flex justify-content-center">
-
     <nav id="header" class="navbar navbar-expand-lg navbar-light col-md-10">
         <a class="navbar-brand" href="#"><img src="assets/img/logopng.png" width="50%" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,14 +18,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav d-flex w-100 justify-content-end">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">ACCUEIL <span class="sr-only">(current)</span></a>
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">ACCUEIL</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">APPLICATIONS</a>
+                    <a class="nav-link" href="applications.html">APPLICATIONS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">À PROPOS</a>
+                    <a class="nav-link" href="about.html">À PROPOS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">CONTACT</a>
@@ -47,33 +47,34 @@
 
 <div class="row d-flex justify-content-center">
     <div class="col-md-10 d-flex justify-content-center">
-        <p id="apple" class="text-center">Gérer vos stocks n’a jamais été <br>
-            aussi facile.</p>
+        <p id="apple" class="text-center">Ceci sera une description d'une fonctionnalité générée en PHP avec une boucle. Elle peut être longue ou pas, on s'en branle</p>
     </div>
+
+
+</div>
+
+<div class="carousel">
+    <ul class="carousel-wrapper">
+        <li class="carousel-box">
+            <img src="assets/img/photo1.jpg" alt="CSS3 Perspective Carousel" width="100%" height="100%">
+        </li>
+        <li class="carousel-box">
+            <img src="assets/img/photo2.jpg" alt="CSS3 Perspective Carousel" width="100%" height="100%">
+        </li>
+        <li class="carousel-box">
+            <img src="assets/img/preview.png" alt="CSS3 Perspective Carousel" width="100%" height="100%">
+        </li>
+    </ul>
 </div>
 
 <div class="row d-flex justify-content-center">
-    <div id="software1" class="col-md-10 row">
-        <div class="col-md-6"><img src="assets/img/logiciel1.png" alt="" width="100%" height="100%"></div>
-        <div class="col-md-6 d-flex flex-column justify-content-center">
-            <h5 class="categories mt-0">ACCUEIL</h5>
-            <h3 class="appdesc">Accueil et menu simplifié pour <br>
-                une navigation plus rapide.</h3>
-        </div>
+    <div class="col-md-10">
+        <a href="features.html"><i class="fas fa-arrow-left"></i>&nbsp; Retour aux fonctionnalités</a>
     </div>
 </div>
 
 
-<div class="row d-flex justify-content-center">
-    <div id="software2" class="col-md-10 row">
-        <div class="col-md-6 d-flex flex-column justify-content-center">
-            <h5 class="categories mt-0">ACCUEIL</h5>
-            <h3 class="appdesc">Accueil et menu simplifié pour <br>
-                une navigation plus rapide.</h3>
-        </div>
-        <div class="col-md-6"><img src="assets/img/logiciel2.png" alt="" width="100%" height="100%"></div>
-    </div>
-</div>
+
 
 
 
@@ -104,7 +105,7 @@
 
 
 
-
+<script src="assets/js/carousel.min.js"></script>
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/script.js"></script>

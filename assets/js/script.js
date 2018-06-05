@@ -1,0 +1,3 @@
+Carousel.init({
+    target: $('.carousel')
+});

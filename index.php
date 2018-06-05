@@ -55,7 +55,7 @@
             <p class="description">Un logiciel de gestion de stock multi-secteur.
                 Il permet de gérer et valoriser le stock d’une entreprise ainsi
                 que réaliser un suivi des entrées et des sorties avec une granularité fine (détail de toutes les transactions).</p>
-            <a href="#" class="cta btn btn-primary btn-lg active" role="button" aria-pressed="true">Découvrir</a>
+            <a href="applications.html" class="cta btn btn-primary btn-lg active" role="button" aria-pressed="true">Découvrir</a>
         </div>
         <div class="col-md-6"><img src="assets/img/CHARACTER.png" alt="" width="100%" height="100%"></div>
     </div>
@@ -75,7 +75,7 @@
                 moderne. Son utilisation est très simple et l’interface de ce
                 logiciel de gestion de stock a été pensé pour fonctionner
                 également sur iPad avec un lecteur QR Code Bluetooth.</p>
-            <a href="#" class="cta btn btn-primary btn-lg active" role="button" aria-pressed="true">À propos</a>
+            <a href="about.html" class="cta btn btn-primary btn-lg active" role="button" aria-pressed="true">À propos</a>
         </div>
 
     </div>
@@ -165,7 +165,7 @@
 
 </div>
 <div class="d-flex justify-content-center mb-5">
-    <a href="#" class="cta btn btn-primary btn-lg active" role="button" aria-pressed="true">Toutes les fonctionnalités</a>
+    <a href="features.html" class="cta btn btn-primary btn-lg active" role="button" aria-pressed="true">Toutes les fonctionnalités</a>
 </div>
 
 <hr>
@@ -197,7 +197,7 @@
     <p class="">Coût, Qualité, Sécurité, Disponibilité</p>
     <p class="small">Ce sont les 4 maîtres-mots de <span class="font-weight-bold">Power28</span></p>
     <div class="d-flex justify-content-center">
-        <a href="#" class="cta btn btn-primary btn-lg active" role="button" aria-pressed="true">Toutes les fonctionnalités</a>
+        <a href="features.html" class="cta btn btn-primary btn-lg active" role="button" aria-pressed="true">Toutes les fonctionnalités</a>
     </div>
 </div>
 
