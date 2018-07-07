@@ -82,6 +82,7 @@ if (isset($_GET['c']) ) {
     if ($_GET['c'] == 'admin-feature-form') {
         if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1) {
             require('./controllers/admin/admin-feature-form.php');
+
         }
     }
 

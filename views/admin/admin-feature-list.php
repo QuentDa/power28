@@ -6,7 +6,7 @@
                 <a class="btn btn-primary" href="index.php?c=admin-feature-form">Ajouter une fonctionnalité</a>
             </header>
 
-            <?php if(isset($message)): //si un message a été généré plus haut, l'afficher ?>
+            <?php if(isset($message)): ?>
                 <div class="bg-success text-white p-2 mb-4">
                     <?php echo $message; ?>
                 </div>
@@ -25,7 +25,6 @@
                     <?php foreach($features as $feature): ?>
 
                         <tr>
-                            <!-- htmlentities sert à écrire les balises html sans les interpréter -->
                             <th><?php echo htmlentities($feature['id']); ?></th>
                             <td><?php echo htmlentities($feature['name']); ?></td>
                             <td><?php echo htmlentities($feature['description']); ?></td>

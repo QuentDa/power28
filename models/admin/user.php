@@ -17,7 +17,6 @@ function selectUser2($id){
 
     $query = $db->prepare('SELECT * FROM user WHERE id = ?');
     $query->execute(array($id));
-    //$user contiendra les informations de l'utilisateur dont l'id a été envoyé en paramètre d'URL
     return $query->fetch();
 
 
@@ -67,7 +66,6 @@ function deleteUser($userId){
             $userId
         ]
     );
-//générer un message à afficher plus bas pour l'administrateur
     if($result){
         return "Suppression efféctuée.";
     }
@@ -96,13 +94,11 @@ function createUserAdmin($first, $last, $pass, $mail, $isAdmin){
             $isAdmin,
         ]
     );
-    //redirection après enregistrement
-    //si $newUser alors l'enregistrement a fonctionné
     if($newUser){
         header('location:index.php?page=admin-user-list');
         exit;
     }
-    else{ //si pas $newUser => enregistrement échoué => générer un message pour l'administrateur à afficher plus bas
+    else{
         return "Impossible d'enregistrer le nouvel utilisateur...";
     }
 }
@@ -111,23 +107,16 @@ function createUserAdmin($first, $last, $pass, $mail, $isAdmin){
 function updateUser($first, $last, $mail, $isAdmin, $userId, $pass){
     $db = dbConnect();
 
-    //début de la chaîne de caractères de la requête de mise à jour
     $queryString = 'UPDATE user SET firstname = :firstname, lastname = :lastname, email = :email, is_admin = :is_admin ';
-    //début du tableau de paramètres de la requête de mise à jour
     $queryParameters = [ 'firstname' => $first, 'lastname' => $last, 'email' => $mail, 'is_admin'=> $isAdmin, 'id' => $userId ];
 
-    //uniquement si l'admin souhaite modifier le mot de passe
     if( !empty($_POST['password'])) {
-        //concaténation du champ password à mettre à jour
         $queryString .= ', password = :password ';
-        //ajout du paramètre password à mettre à jour
         $queryParameters['password'] = hash('md5', $pass);
     }
 
-    //fin de la chaîne de caractères de la requête de mise à jour
     $queryString .= 'WHERE id = :id';
 
-    //préparation et execution de la requête avec la chaîne de caractères et le tableau de données
     $query = $db->prepare($queryString);
     $result = $query->execute($queryParameters);
 

@@ -19,6 +19,7 @@ function createFeature($name, $description){
     );
 }
 
+
 function deleteFeature($featureId){
 $db = dbConnect();
 
@@ -28,7 +29,6 @@ $db = dbConnect();
             $featureId
         ]
     );
-//générer un message à afficher plus bas pour l'administrateur
     if($result){
         return "Suppression efféctuée.";
     }
@@ -38,18 +38,16 @@ $db = dbConnect();
 }
 
 
+
+
 function updateFeature($name, $description){
     $db = dbConnect();
 
-    //début de la chaîne de caractères de la requête de mise à jour
     $queryString = 'UPDATE features SET name = :name, description = :description ';
-    //début du tableau de paramètres de la requête de mise à jour
     $queryParameters = [ 'name' => $name, 'description' => $description, 'id' => $featureId ];
 
-    //fin de la chaîne de caractères de la requête de mise à jour
     $queryString .= 'WHERE id = :id';
 
-    //préparation et execution de la requête avec la chaîne de caractères et le tableau de données
     $query = $db->prepare($queryString);
     $result = $query->execute($queryParameters);
 
