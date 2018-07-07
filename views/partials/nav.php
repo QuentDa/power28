@@ -24,8 +24,21 @@
                         <i class="fas fa-user-circle"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Connexion</a>
-                        <a class="dropdown-item" href="#">S'inscrire</a>
+                        <?php if(isset($_SESSION['user'])): ?>
+                            <p class="h3 text-center"><?php echo $_SESSION['user']; ?> !</p>
+                            <p>
+                            <div class="d-flex flex-column align-items-center">
+                                <a class="d-block btn btn-success mb-4 mt-2" href="index.php?c=user-profile">Mon Profil</a>
+                                <a class="d-block btn btn-danger mb-4 mt-2" href="index.php?logout">Déconnexion</a>
+                                <?php if($_SESSION['is_admin'] == 1): ?>
+                                    <a class="d-block btn btn-warning mb-4 mt-2" href="index.php?c=admin-index">Administration</a>
+                                <?php endif; ?>
+                            </div>
+                            </p>
+                        <?php else: ?>
+                            <a class="dropdown-item" href="index.php?c=login">Connexion</a>
+                            <a class="dropdown-item" href="index.php?c=register">S'inscrire</a>
+                        <?php endif; ?>
                     </div>
                 </li>
             </ul>

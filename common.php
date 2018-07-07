@@ -1,7 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Quentin
- * Date: 05/06/2018
- * Time: 13:47
- */
+
+function dbConnect(){
+
+    try{
+        return new PDO('mysql:host=localhost;dbname=power28;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    }
+    catch (Exception $exception)
+    {
+        die( 'Erreur : ' . $exception->getMessage() );
+    }
+}
+
+function logout($session){
+    session_unset($session);
+}

@@ -2,7 +2,7 @@
     <div class="d-flex col-md-10">
 
         <div class="col-md-6">
-                <p id="apple" class="">Une question, une démonstration? <br> Écrivez nous.</p>
+                <p id="apple" class="">Une question, <br> une démonstration? <br> Écrivez nous...</p>
         </div>
 
         <div class="col-md-6 d-flex justify-content-center">
