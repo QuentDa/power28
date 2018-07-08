@@ -1,7 +1,7 @@
 
 <div class="row d-flex justify-content-center">
-    <div id="welcome" class="col-md-10 row">
-        <div class="col-md-6">
+    <div id="welcome" class="col-lg-10 col-12 row">
+        <div class="col-lg-6 col-12">
             <h5 class="categories">BIENVENUE</h5>
             <h3 class="titles">INTRODUCTION À</h3>
             <h3 class="titles brandname">POWER 28</h3>
@@ -10,16 +10,16 @@
                 que réaliser un suivi des entrées et des sorties avec une granularité fine (détail de toutes les transactions).</p>
             <a href="index.php?c=applications" class="cta btn btn-primary btn-lg active" role="button" aria-pressed="true">Découvrir</a>
         </div>
-        <div class="col-md-6"><img src="assets/img/CHARACTER.png" alt="" width="100%" height="100%"></div>
+        <div class="col-md-6 col-12"><img src="assets/img/CHARACTER.png" alt="" width="100%" height="100%"></div>
     </div>
 </div>
 
 <hr>
 
 <div class="row d-flex justify-content-center">
-    <div id="about" class="col-md-10 row mt-5">
-        <div class="col-md-6 p-0 m-0"><img src="assets/img/ABOUT.png" alt="" width="90%" height="100%"></div>
-        <div class="col-md-6">
+    <div id="about" class="col-lg-10 col-12 row mt-5">
+        <div class="col-lg-6 col-12 p-0 m-0"><img src="assets/img/ABOUT.png" alt="" width="90%" height="100%"></div>
+        <div class="col-lg-6 col-12">
             <h5 class="categories">DÉVELOPEMMENT</h5>
             <h3 class="titles">Développé par une équipe
                 à la recherche de vos besoins.</h3>
@@ -34,29 +34,11 @@
     </div>
 </div>
 
-<hr>
-
-<div class="row d-flex justify-content-center">
-    <div id="features" class="col-md-10 row">
-        <div class="col-md-6">
-            <h5 class="categories">FONCTIONNALITÉS</h5>
-            <h3 class="titles">Des fonctionnalités à la
-                hauteur de vos attentes</h3>
-        </div>
-        <div class="col-md-6">
-
-            <div id="blackrectangle"></div>
-            <div id="whiterectangle1"><a href=""><i class="arrows far fa-arrow-alt-circle-right"></i></a></div>
-            <div id="whiterectangle2"><a href=""><i class="arrows far fa-arrow-alt-circle-right"></i></a></div>
-            <div id="whiterectangle3"><a href=""><i class="arrows far fa-arrow-alt-circle-right"></i></a></div>
-        </div>
-    </div>
-</div>
 
 <hr>
 
 <div class="row d-flex justify-content-center">
-    <div id="features2" class="col-md-10">
+    <div id="features2" class="col-lg-10 col-12">
         <img src="assets/img/preview.png" alt="" width="100%">
         <div class="text-center">
         <h5 class="categories mt-5 mb-0">FONCTIONNALITÉS</h5>
@@ -65,9 +47,9 @@
     </div>
 </div>
 
-<div class="row d-flex justify-content-center">
-    <div class="col-10 row">
-        <div class="col-md-6 mt-4">
+<div id="features3" class="row d-flex justify-content-center">
+    <div class="col-lg-10 col-12 row">
+        <div class="col-lg-6 col-12 mt-4">
             <div class="row">
                 <i class="check fas fa-check-circle"></i>
                 <p class="checkboxes mt-1">
@@ -91,7 +73,7 @@
             </div>
         </div>
 
-        <div class="col-md-6 mt-4">
+        <div class="col-lg-6 col-12 mt-4">
             <div class="row">
                 <i class="check fas fa-check-circle"></i>
                 <p class="checkboxes">
@@ -118,15 +100,15 @@
 
 </div>
 <div class="d-flex justify-content-center mb-5">
-    <a href="index.php?c=features" class="cta btn btn-primary btn-lg active" role="button" aria-pressed="true">Toutes les fonctionnalités</a>
+    <a href="index.php?c=features" class="cta ctaquery btn btn-primary btn-lg active" role="button" aria-pressed="true">Toutes les fonctionnalités</a>
 </div>
 
 <hr>
 
 <div class="row d-flex justify-content-center">
-    <div id="host" class="col-md-10 row mt-5">
+    <div id="host" class="col-lg-10 col-12 row mt-5">
 
-        <div class="col-md-6">
+        <div class="col-lg-6 col-12">
             <h5 class="categories">HÉBERGEMENTS</h5>
             <h3 class="titles">Spécialisés dans l’hébergement
                 de bases de données depuis 2010</h3>
@@ -141,16 +123,16 @@
                 perte de données.</p>
         </div>
 
-        <div class="col-md-6 p-0 m-0"><img src="assets/img/backgroundserver.jpg" alt="" width="90%" height="100%"></div>
+        <div class="col-lg-6 col-12 p-0 m-0"><img src="assets/img/backgroundserver.jpg" alt="" width="90%" height="100%"></div>
     </div>
 </div>
 
 
-<div id="prefoot" class="col-md-12 d-flex flex-column justify-content-center">
+<div id="prefoot" class="col-12 d-flex flex-column justify-content-center">
     <p class="">Coût, Qualité, Sécurité, Disponibilité</p>
     <p class="small">Ce sont les 4 maîtres-mots de <span class="font-weight-bold">Power28</span></p>
     <div class="d-flex justify-content-center">
-        <a href="index.php?c=features" class="cta btn btn-primary btn-lg active" role="button" aria-pressed="true">Toutes les fonctionnalités</a>
+        <a href="index.php?c=features" class="cta ctaquery btn btn-primary btn-lg active" role="button" aria-pressed="true">Toutes les fonctionnalités</a>
     </div>
 </div>
 

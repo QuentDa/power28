@@ -53,6 +53,22 @@ if (isset($_GET['c']) ) {
     if ($_GET['c'] && $_GET['c'] == 'user-profile') {
         require_once('./controllers/user-profile.php');
     }
+    if ($_GET['c'] && $_GET['c'] == 'forum-index') {
+        require_once('./controllers/forum-index.php');
+    }
+    if ($_GET['c'] && $_GET['c'] == 'forum-topic') {
+        require_once('./controllers/forum-topic.php');
+    }
+    if ($_GET['c'] && $_GET['c'] == 'forum-topic-form') {
+        require_once('./controllers/forum-topic-form.php');
+    }
+    if ($_GET['c'] && $_GET['c'] == 'forum-answer') {
+        require_once('./controllers/forum-answer.php');
+    }
+    if ($_GET['c'] && $_GET['c'] == 'buy') {
+        require_once('./controllers/buy.php');
+    }
+
 
     //ADMIN
     if ($_GET['c'] == 'admin-index') {
@@ -82,6 +98,36 @@ if (isset($_GET['c']) ) {
     if ($_GET['c'] == 'admin-feature-form') {
         if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1) {
             require('./controllers/admin/admin-feature-form.php');
+
+        }
+    }
+    if ($_GET['c'] == 'admin-forum-index') {
+        if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1) {
+            require('./controllers/admin/admin-forum-index.php');
+
+        }
+    }
+    if ($_GET['c'] == 'admin-forum-category-list') {
+        if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1) {
+            require('./controllers/admin/admin-forum-category-list.php');
+
+        }
+    }
+    if ($_GET['c'] == 'admin-forum-category-form') {
+        if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1) {
+            require('./controllers/admin/admin-forum-category-form.php');
+
+        }
+    }
+    if ($_GET['c'] == 'admin-faq-list') {
+        if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1) {
+            require('./controllers/admin/admin-faq-list.php');
+
+        }
+    }
+    if ($_GET['c'] == 'admin-faq-form') {
+        if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1) {
+            require('./controllers/admin/admin-faq-form.php');
 
         }
     }

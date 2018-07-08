@@ -5,7 +5,6 @@
         <section class="col-9">
 
             <header class="pb-3">
-                <!-- Si $user existe, on affiche "Modifier" SINON on affiche "Ajouter" -->
                 <h4><?php if(isset($user)): ?>Modifier<?php else: ?>Ajouter<?php endif; ?> un utilisateur</h4>
             </header>
 

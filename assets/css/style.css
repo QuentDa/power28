@@ -4,8 +4,21 @@ body{
 }
 
 #header{
-    background-color: #E5E5E5;
     height: 85px;
+    overflow: visible;
+    position: -webkit-sticky;
+}
+.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    border-top: 0;
+    transition: 1s;
+}
+.newbgwhite{
+    background-color: #E5E5E5;!important;
+    box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.35);
+    transition: 1s;
 }
 .menu{
     margin-right: 100px;
@@ -33,6 +46,9 @@ a:hover{
     border-bottom: 9px solid #D8D8D8;
     border-radius: 10px;
     transition: 0.5s;
+}
+.dropdown-menu show{
+    z-index: 100!important;
 }
 #navbarDropdownMenuLink:hover{
     border-bottom: 0;
@@ -258,4 +274,57 @@ form .cta{
 .admin-li{
     text-align: left;
     font-size: 30px;
+}
+#squareAnswer{
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 988px) {
+    .col-12{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .categories{
+        font-size: 30px;
+    }
+    #welcome{
+        display: flex;
+        text-align: center;
+    }
+    .description{
+        font-size: 40px;
+    }
+    .cta{
+        font-size: 30px;
+    }
+    #welcome img{
+        display: none;
+    }
+
+    #about{
+        text-align: center;
+    }
+
+    .titles{
+        font-size: 50px;
+    }
+    #features3 .checkboxes{
+        font-size: 40px;
+        text-align: center;
+    }
+    .ctaquery{
+        width: 50%;
+        text-align: center;
+    }
+    .img1, .img2, .img3, .img4{
+        display: none;
+    }
+
+
 }

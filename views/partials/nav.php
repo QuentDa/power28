@@ -1,6 +1,6 @@
 <div class="row d-flex justify-content-center">
 
-    <nav id="header" class="navbar navbar-expand-lg navbar-light col-md-10">
+    <nav id="header" class="navbar navbar-expand-lg navbar-light col-lg-10 col-12">
         <a class="navbar-brand" href="index.php?c=index"><img src="assets/img/logopng.png" width="50%" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -17,7 +17,16 @@
                     <a class="nav-link" href="index.php?c=about">À PROPOS</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="index.php?c=buy">ACHAT</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="index.php?c=contact">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php?c=forum-index">FORUM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php?c=faqQuestions">FAQ</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

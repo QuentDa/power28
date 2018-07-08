@@ -7,7 +7,6 @@ $query = $db->query('SELECT * FROM user');
 $users = $query->fetchall();
 
 
-//supprimer l'utilisateur dont l'ID est envoyé en paramètre URL
 if(isset($_GET['user_id']) && isset($_GET['action']) && $_GET['action'] == 'delete'){
 
     $message = deleteUser($_GET['user_id']);

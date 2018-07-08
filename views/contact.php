@@ -1,11 +1,11 @@
 <div class="row d-flex justify-content-center mt-5">
-    <div class="d-flex col-md-10">
+    <div class="d-flex col-lg-10 col-12">
 
-        <div class="col-md-6">
+        <div class="col-lg-6">
                 <p id="apple" class="">Une question, <br> une démonstration? <br> Écrivez nous...</p>
         </div>
 
-        <div class="col-md-6 d-flex justify-content-center">
+        <div class="col-lg-6 d-flex justify-content-center">
             <form action="index.php?c=contact" method="post" class="contactForm w-100">
                 <div class="form-group">
                     <label for="name">Votre nom et prénom : </label>

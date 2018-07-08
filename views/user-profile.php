@@ -1,18 +1,7 @@
 <div class="row d-flex justify-content-center">
     <div class="col-md-10">
         <div id="userHeader" class="row mt-5">
-            <div class="col-md-6 d-flex align-items-center justify-content-center">
-                <form action="index.php?c=user-profile" method="post" enctype="multipart/form-data" class="image">
-                    <img src="./assets/img/defaultimage.png" alt="" width="150px" height="150px">
-                    <div class="form-group">
-                        <input class="form-control" type="file" name="image" id="image" />
-                        <?php if(isset($user) && $user['image']): ?>
-                            <img class="img-fluid py-4" src="./assets/img/user/<?php echo $user['image']; ?>" alt="" />
-                            <input type="hidden" name="current-image" value="<?php echo $user['image']; ?>" />
-                        <?php endif; ?>
-                    </div>
-                </form>
-            </div>
+
             <div class="col-md-6 d-flex align-items-center justify-content-center">
                 <div class="name">
                     <h4 class="ml-5"><?php echo $user['lastname']?> <?php echo $user['firstname']?></h4>

@@ -7,7 +7,7 @@ function sendMail($nameEmail, $emailUser, $messageContent){
     $message = htmlentities($messageContent);
 
     $destinataire = 'deandradeq@gmail.com';
-    $sujet = 'Mail provenant de power28.fr'; // Titre de l'email
+    $sujet = 'Mail provenant de power28.fr';
     $contenu = '<html><head><title>Contact Power 28</title></head><body>';
     $contenu .= '<p>Bonjour, vous avez reçu un message à partir de votre site web.</p>';
     $contenu .= '<p><strong>Nom</strong>: ' . $name . '</p>';

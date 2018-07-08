@@ -4,62 +4,15 @@
             gestion de stock.</p>
     </div>
 </div>
-
 <div class="row d-flex justify-content-center">
-    <div class="col-10 d-flex justify-content-center">
+
+    <div class="row  text-center col-10 d-flex justify-content-center">
         <?php foreach($features as $feature): ?>
         <div class="featuresquare">
             <a href="index.php?c=onefeature&feature_id=<?php echo $feature['id']; ?>"><div class="featurecircle"><i class="fas fa-mobile"></i></div></a>
-            <p class="appdesc">Lorem Ipsum</p>
+            <p class="appdesc"><?php echo $feature['name']; ?></p>
         </div>
         <?php endforeach; ?>
-
-        <div class="featuresquare">
-            <a href="onefeature.html"><div class="featurecircle"><i class="fas fa-mobile"></i></div></a>
-            <p class="appdesc">Lorem Ipsum</p>
-        </div>
-
-        <div class="featuresquare">
-            <a href="onefeature.html"><div class="featurecircle"><i class="fas fa-mobile"></i></div></a>
-            <p class="appdesc">Lorem Ipsum</p>
-        </div>
     </div>
-</div>
-<div class="row d-flex justify-content-center">
-    <div class="col-md-10 d-flex justify-content-center">
-        <div class="featuresquare">
-            <a href="onefeature.html"><div class="featurecircle"><i class="fas fa-mobile"></i></div></a>
-            <p class="appdesc">Lorem Ipsum</p>
-        </div>
 
-        <div class="featuresquare">
-            <a href="onefeature.html"><div class="featurecircle"><i class="fas fa-mobile"></i></div></a>
-            <p class="appdesc">Lorem Ipsum</p>
-        </div>
-
-        <div class="featuresquare">
-            <a href="onefeature.html"><div class="featurecircle"><i class="fas fa-mobile"></i></div></a>
-            <p class="appdesc">Lorem Ipsum</p>
-        </div>
-    </div>
-</div>
-<div class="row d-flex justify-content-center">
-    <div class="col-md-10 d-flex justify-content-center">
-        <div class="featuresquare">
-            <a href="onefeature.html"><div class="featurecircle"><i class="fas fa-mobile"></i></div></a>
-            <p class="appdesc">Lorem Ipsum</p>
-
-        </div>
-
-        <div class="featuresquare">
-            <a href="onefeature.html"><div class="featurecircle"><i class="fas fa-mobile"></i></div></a>
-            <p class="appdesc">Lorem Ipsum</p>
-        </div>
-
-        <div class="featuresquare">
-            <a href="onefeature.html"><div class="featurecircle"><i class="fas fa-mobile"></i></div></a>
-            <p class="appdesc">Lorem Ipsum</p>
-        </div>
-
-    </div>
 </div>

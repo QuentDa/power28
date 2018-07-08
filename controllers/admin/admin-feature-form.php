@@ -3,7 +3,6 @@ require_once ('models/admin/features.php');
 
 if(isset($_POST['save'])){
     $message = createFeature($_POST['name'], $_POST["description"]);
-    die();
 
 }
 

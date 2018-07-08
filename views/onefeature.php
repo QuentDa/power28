@@ -1,6 +1,8 @@
     <div class="row d-flex justify-content-center">
-        <div class="col-md-10 d-flex justify-content-center">
-            <p id="apple" class="text-center">Ceci sera une description d'une fonctionnalité générée en PHP avec une boucle. Elle peut être longue ou pas, on s'en branle</p>
+        <div class="col-md-10 d-flex flex-column align-items-center">
+
+            <p id="apple" class="font-weight-light text-center"><?php echo $features['name'] ?></p>
+            <p id="apple" class="text-center m-0 p-0"><?php echo $features['description'] ?></p>
         </div>
     </div>
 
@@ -20,6 +22,6 @@
 
     <div class="row d-flex justify-content-center">
         <div class="col-md-10">
-            <a href="features.html"><i class="fas fa-arrow-left"></i>&nbsp; Retour aux fonctionnalités</a>
+            <a href="index.php?c=features"><i class="fas fa-arrow-left"></i>&nbsp; Retour aux fonctionnalités</a>
         </div>
     </div>

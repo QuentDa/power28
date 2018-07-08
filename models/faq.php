@@ -22,6 +22,17 @@ function getFaqCategories(){
 
 }
 
+function getFaqQuestion($questionId){
+
+    $db = dbConnect();
+    $query = $db->prepare('SELECT * FROM faq_questions WHERE id = ?');
+
+    $query->execute(array($questionId));
+
+    return $query -> fetch();
+
+}
+
 function getFaqQuestions(){
 
     $db = dbConnect();
@@ -31,12 +42,4 @@ function getFaqQuestions(){
     $query->execute();
 
     return $questions = $query->fetchAll();
-}
-
-function getFaqAnswers(){
-    $db = dbConnect();
-    $query = $db->query ('SELECT * FROM faq_answers');
-    $query -> execute();
-
-    return $answers = $query->fetchAll();
 }

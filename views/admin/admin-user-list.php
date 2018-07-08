@@ -6,7 +6,7 @@
                         <a class="btn btn-primary" href="index.php?c=admin-user-form">Ajouter un utilisateur</a>
                     </header>
 
-                    <?php if(isset($message)): //si un message a été généré plus haut, l'afficher ?>
+                    <?php if(isset($message)):  ?>
                         <div class="bg-success text-white p-2 mb-4">
                             <?php echo $message; ?>
                         </div>
