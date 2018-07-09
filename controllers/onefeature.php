@@ -2,7 +2,7 @@
 require_once ('models/features.php');
 
 if(isset($_GET['feature_id'] ) ) {
-    $query = $db->prepare('SELECT * FROM features');
+    $query = $db->prepare('SELECT * FROM features WHERE id=?');
     $query->execute( array($_GET['feature_id']));
 
     $features = $query->fetch();
